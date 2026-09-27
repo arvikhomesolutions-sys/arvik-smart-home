@@ -698,10 +698,26 @@ footer {
 
 @media (max-width: 500px) {
 
-    nav {
-        display: flex;
+    .nav {
+        flex-wrap: wrap;
     }
 
+    .nav-btn {
+        display: none;
+    }
+
+    .nav > .btn-secondary {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding-bottom: 12px;
+    }
     .hero-content {
         grid-template-columns: 1fr;
         gap: 40px;
