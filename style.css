@@ -585,8 +585,56 @@ nav a:hover {
 }
 
 .contact-card p {
+  
     color: #667085;
     font-size: 14px;
+    
+}
+/* =========================
+   PROJECT GALLERY
+========================= */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    height: 220px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #e4e7ec;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* =========================
+   PROJECT VIDEOS
+========================= */
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.video-item {
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #e4e7ec;
+}
+
+.video-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 
